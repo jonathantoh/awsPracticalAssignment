@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="FLYTA.WsProgramCatalog" CodeBehind="WsProgramCatalog.svc.cs" %>
