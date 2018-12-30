@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="3eea225c-b03b-43d0-bb1b-e0cafbbc8a7e" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:50327/WsProgramCatalog.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="WsProgramCatalog.xsd" MetadataType="Schema" ID="bbe9f0db-d4c9-4966-9eb9-9b6866379f7e" SourceId="1" SourceUrl="http://localhost:50327/WsProgramCatalog.svc?xsd=xsd1" />
+    <MetadataFile FileName="WsProgramCatalog.wsdl" MetadataType="Wsdl" ID="d928bd19-7780-4215-8112-7cbedea281e6" SourceId="1" SourceUrl="http://localhost:50327/WsProgramCatalog.svc?wsdl" />
+    <MetadataFile FileName="WsProgramCatalog1.xsd" MetadataType="Schema" ID="dbbf1cca-94f0-43fa-a610-2f49f742fd4e" SourceId="1" SourceUrl="http://localhost:50327/WsProgramCatalog.svc?xsd=xsd2" />
+    <MetadataFile FileName="WsProgramCatalog.disco" MetadataType="Disco" ID="c237a7da-7f80-4bac-9f44-c7c36b6e42ba" SourceId="1" SourceUrl="http://localhost:50327/WsProgramCatalog.svc?disco" />
+    <MetadataFile FileName="WsProgramCatalog2.xsd" MetadataType="Schema" ID="0ca420fb-67eb-446b-8ab2-20ea223d460a" SourceId="1" SourceUrl="http://localhost:50327/WsProgramCatalog.svc?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
