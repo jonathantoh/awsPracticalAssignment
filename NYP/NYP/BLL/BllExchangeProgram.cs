@@ -51,5 +51,21 @@ namespace NYP.BLL
             //}
             return dataSetBooksList;
         }
+
+        public int register(string Name, string Admin_No, string Course, string Contact_No, string PEM_Group, string Emergency_Person, string Emergency_Contact, int OSEP_ID)
+        {
+            DalNYP myCat = new DalNYP();
+            int result = myCat.registerStudents(Name, Admin_No, Course, Contact_No, PEM_Group, Emergency_Person, Emergency_Contact, OSEP_ID);
+
+            return result;
+        }
+
+        public int increaseSeats(int Id)
+        {
+            DalFlyTA myCat = new DalFlyTA();
+            int result = myCat.increaseSeats(Id);
+
+            return result;
+        }
     }
 }

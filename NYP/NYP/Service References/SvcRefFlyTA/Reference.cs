@@ -20,6 +20,18 @@ namespace NYP.SvcRefFlyTA {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IWsProgramCatalog/GetPrograms", ReplyAction="http://tempuri.org/IWsProgramCatalog/GetProgramsResponse")]
         System.Threading.Tasks.Task<System.Data.DataSet> GetProgramsAsync();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IWsProgramCatalog/GetAllAvailableOSEP", ReplyAction="http://tempuri.org/IWsProgramCatalog/GetAllAvailableOSEPResponse")]
+        System.Data.DataSet GetAllAvailableOSEP();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IWsProgramCatalog/GetAllAvailableOSEP", ReplyAction="http://tempuri.org/IWsProgramCatalog/GetAllAvailableOSEPResponse")]
+        System.Threading.Tasks.Task<System.Data.DataSet> GetAllAvailableOSEPAsync();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IWsProgramCatalog/IncreaseRegisteredSeats", ReplyAction="http://tempuri.org/IWsProgramCatalog/IncreaseRegisteredSeatsResponse")]
+        int IncreaseRegisteredSeats(int Id);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IWsProgramCatalog/IncreaseRegisteredSeats", ReplyAction="http://tempuri.org/IWsProgramCatalog/IncreaseRegisteredSeatsResponse")]
+        System.Threading.Tasks.Task<int> IncreaseRegisteredSeatsAsync(int Id);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -55,6 +67,22 @@ namespace NYP.SvcRefFlyTA {
         
         public System.Threading.Tasks.Task<System.Data.DataSet> GetProgramsAsync() {
             return base.Channel.GetProgramsAsync();
+        }
+        
+        public System.Data.DataSet GetAllAvailableOSEP() {
+            return base.Channel.GetAllAvailableOSEP();
+        }
+        
+        public System.Threading.Tasks.Task<System.Data.DataSet> GetAllAvailableOSEPAsync() {
+            return base.Channel.GetAllAvailableOSEPAsync();
+        }
+        
+        public int IncreaseRegisteredSeats(int Id) {
+            return base.Channel.IncreaseRegisteredSeats(Id);
+        }
+        
+        public System.Threading.Tasks.Task<int> IncreaseRegisteredSeatsAsync(int Id) {
+            return base.Channel.IncreaseRegisteredSeatsAsync(Id);
         }
     }
 }

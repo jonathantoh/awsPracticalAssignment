@@ -14,5 +14,11 @@ namespace FLYTA
     {
         [OperationContract]
         DataSet GetPrograms();
+
+        [OperationContract]
+        DataSet GetAllAvailableOSEP();
+
+        [OperationContract]
+        int IncreaseRegisteredSeats(int Id);
     }
 }

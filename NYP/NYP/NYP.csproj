@@ -96,6 +96,9 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\NYP_log.ldf">
+      <DependentUpon>NYP.mdf</DependentUpon>
+    </Content>
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -137,6 +140,7 @@
   <ItemGroup>
     <Compile Include="BLL\BllExchangeProgram.cs" />
     <Compile Include="DAL\DalFlyTA.cs" />
+    <Compile Include="DAL\DalNYP.cs" />
     <Compile Include="program.aspx.cs">
       <DependentUpon>program.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

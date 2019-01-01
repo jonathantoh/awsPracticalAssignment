@@ -24,5 +24,10 @@ namespace NYP
             GV_Exchange_List.DataSource = ds;
             GV_Exchange_List.DataBind();
         }
+
+        protected void regiser_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("registration.aspx");
+        }
     }
 }

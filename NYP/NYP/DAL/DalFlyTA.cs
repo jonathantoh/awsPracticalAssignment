@@ -13,7 +13,14 @@ namespace NYP.DAL
         {
             WsProgramCatalogClient FlyTAClient;
             FlyTAClient = new WsProgramCatalogClient();
-            return FlyTAClient.GetPrograms();
+            return FlyTAClient.GetAllAvailableOSEP();
+        }
+
+        public int increaseSeats(int Id)
+        {
+            WsProgramCatalogClient FlyTAClient;
+            FlyTAClient = new WsProgramCatalogClient();
+            return FlyTAClient.IncreaseRegisteredSeats(Id);
         }
     }
 }

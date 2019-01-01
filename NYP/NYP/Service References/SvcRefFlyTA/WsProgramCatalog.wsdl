@@ -13,16 +13,54 @@
   <wsdl:message name="IWsProgramCatalog_GetPrograms_OutputMessage">
     <wsdl:part name="parameters" element="tns:GetProgramsResponse" />
   </wsdl:message>
+  <wsdl:message name="IWsProgramCatalog_GetAllAvailableOSEP_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllAvailableOSEP" />
+  </wsdl:message>
+  <wsdl:message name="IWsProgramCatalog_GetAllAvailableOSEP_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllAvailableOSEPResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWsProgramCatalog_IncreaseRegisteredSeats_InputMessage">
+    <wsdl:part name="parameters" element="tns:IncreaseRegisteredSeats" />
+  </wsdl:message>
+  <wsdl:message name="IWsProgramCatalog_IncreaseRegisteredSeats_OutputMessage">
+    <wsdl:part name="parameters" element="tns:IncreaseRegisteredSeatsResponse" />
+  </wsdl:message>
   <wsdl:portType name="IWsProgramCatalog">
     <wsdl:operation name="GetPrograms">
       <wsdl:input wsaw:Action="http://tempuri.org/IWsProgramCatalog/GetPrograms" message="tns:IWsProgramCatalog_GetPrograms_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IWsProgramCatalog/GetProgramsResponse" message="tns:IWsProgramCatalog_GetPrograms_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllAvailableOSEP">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWsProgramCatalog/GetAllAvailableOSEP" message="tns:IWsProgramCatalog_GetAllAvailableOSEP_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWsProgramCatalog/GetAllAvailableOSEPResponse" message="tns:IWsProgramCatalog_GetAllAvailableOSEP_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="IncreaseRegisteredSeats">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWsProgramCatalog/IncreaseRegisteredSeats" message="tns:IWsProgramCatalog_IncreaseRegisteredSeats_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWsProgramCatalog/IncreaseRegisteredSeatsResponse" message="tns:IWsProgramCatalog_IncreaseRegisteredSeats_OutputMessage" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="BasicHttpBinding_IWsProgramCatalog" type="tns:IWsProgramCatalog">
     <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
     <wsdl:operation name="GetPrograms">
       <soap:operation soapAction="http://tempuri.org/IWsProgramCatalog/GetPrograms" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllAvailableOSEP">
+      <soap:operation soapAction="http://tempuri.org/IWsProgramCatalog/GetAllAvailableOSEP" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IncreaseRegisteredSeats">
+      <soap:operation soapAction="http://tempuri.org/IWsProgramCatalog/IncreaseRegisteredSeats" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

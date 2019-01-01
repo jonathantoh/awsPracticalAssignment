@@ -105,17 +105,39 @@
 		<hr/>
         <div class="form-group">
 			<div class="row">
-				<div class="col-xs-6"><asp:TextBox ID="FnameTxt" class="form-control" name="first_name" placeholder="First Name" required="required" runat="server"></asp:TextBox></div>
-				<div class="col-xs-6"><asp:TextBox ID="LnameTxt" class="form-control" name="last_name" placeholder="Last Name" required="required" runat="server"></asp:TextBox></div>
+				<div class="col-xs-6"><asp:TextBox ID="nameTxt" class="form-control" name="nameTxt" placeholder="Name" required="required" runat="server"></asp:TextBox></div>
+				<div class="col-xs-6"><asp:TextBox ID="adminTxt" class="form-control" name="adminTxt" placeholder="Admin Number" required="required" runat="server"></asp:TextBox></div>
+			</div>        	
+        </div>
+<%--        <div class="form-group">
+            <asp:DropDownList ID="ddlCourse" runat="server" required="required" AppendDataBoundItems="true">
+                <asp:ListItem Text="<Select Course>" disabled="disabled" Value="0" />
+                <asp:ListItem Text="Diploma in Business Informatics" Value="Diploma in Business Informatics" />
+                <asp:ListItem Text="Diploma in Financial Informatics" Value="Diploma in Financial Informatics" />
+
+            </asp:DropDownList>
+        </div>--%>
+        <div class="form-group">
+            <asp:textbox id="coursetxt" class="form-control" name="course" placeholder="course" required="required" runat="server"></asp:textbox>
+        </div>
+        <div class="form-group">
+            <asp:TextBox class="form-control" name="contact" placeholder="Contact Number" required="required" ID="contactTxt" runat="server"></asp:TextBox>
+        </div>
+        <div class="form-group">
+            <asp:TextBox class="form-control" name="pemgroup" placeholder="PEM Group" required="required" ID="pemTxt" runat="server"></asp:TextBox>
+        </div>
+        <div class="form-group">
+			<div class="row">
+				<div class="col-xs-6"><asp:TextBox ID="emergencyPerson" class="form-control" name="emergencyPerson" placeholder="Emergency Person" required="required" runat="server"></asp:TextBox></div>
+				<div class="col-xs-6"><asp:TextBox ID="emergencyContact" class="form-control" name="emergencyContact" placeholder="Emergency Contact" required="required" runat="server"></asp:TextBox></div>
 			</div>        	
         </div>
         <div class="form-group">
-            <asp:TextBox ID="Email" type="email" class="form-control" name="email" placeholder="Email" required="required" runat="server"></asp:TextBox>
+            <asp:DropDownList class="form-control" ID="ddlProgram" runat="server" required="required" AppendDataBoundItems="true">
+                <asp:ListItem Text="<Select Program>" disabled="disabled" Selected="True" Value="0" />
+            </asp:DropDownList>
         </div>
-        <div class="form-group">
-            <asp:TextBox class="form-control" name="mobile" placeholder="Mobile" required="required" ID="MobileNumber" runat="server"></asp:TextBox>
-        </div>
-		<div class="form-group">
+		<%--<div class="form-group">
             <asp:TextBox runat="server" class="form-control" name="password" placeholder="Password" required="required" ID="Password" TextMode="Password"
                 
                 data-toggle="popover" title="Password must meet the following requirements:" 
@@ -139,14 +161,14 @@
               ControlToValidate="ConfirmPassword"
               ErrorMessage="Your passwords do not match up!"
               Display="Dynamic" />
-        </div>        
+        </div>        --%>
         <div class="form-group">
 			<label class="checkbox-inline"><input type="checkbox" required="required"/> I accept the <a href="#">Terms of Use</a> &amp; <a href="#">Privacy Policy</a></label>
 		</div>
 		<div class="form-group">
-            <asp:Button ID="Register" class="btn btn-primary btn-lg" runat="server" Text="Sign Up"  />
+            <asp:Button ID="Register" class="btn btn-primary btn-lg" runat="server" Text="Sign Up" OnClick="Register_Click"  />
         </div>
-	<div class="hint-text">Already have an account? <a href="login.aspx"/>Login here</div>
+	<div class="hint-text">Go <a href="program.aspx"/>Back To Program List</div>
 </div>
 
 

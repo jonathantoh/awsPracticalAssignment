@@ -16,5 +16,21 @@ namespace FLYTA.BLL
             dataLayerPrograms = new DalPrograms();
             return dataLayerPrograms.GetAll();
         }
+
+        public DataSet GetAvailPrograms()
+        {
+            DalPrograms dataLayerPrograms;
+
+            dataLayerPrograms = new DalPrograms();
+            return dataLayerPrograms.GetAllAvailableOSEP();
+        }
+
+        public int IncreaseRegisteredSeats(int Id)
+        {
+            DalPrograms dataLayerPrograms;
+
+            dataLayerPrograms = new DalPrograms();
+            return dataLayerPrograms.IncreaseRegisteredSeats(Id);
+        }
     }
 }

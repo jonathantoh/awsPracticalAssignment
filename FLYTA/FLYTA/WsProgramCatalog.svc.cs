@@ -18,5 +18,20 @@ namespace FLYTA
             bizLayerBooks = new FLYTA.BLL.BllProgramCatalog();
             return bizLayerBooks.GetPrograms();
         }
+
+        public DataSet GetAllAvailableOSEP()
+        {
+            FLYTA.BLL.BllProgramCatalog bizLayerBooks;
+            bizLayerBooks = new FLYTA.BLL.BllProgramCatalog();
+            return bizLayerBooks.GetAvailPrograms();
+        }
+
+
+        public int IncreaseRegisteredSeats(int Id)
+        {
+            FLYTA.BLL.BllProgramCatalog bizLayerBooks;
+            bizLayerBooks = new FLYTA.BLL.BllProgramCatalog();
+            return bizLayerBooks.IncreaseRegisteredSeats(Id);
+        }
     }
 }

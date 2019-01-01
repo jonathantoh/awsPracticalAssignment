@@ -9,7 +9,7 @@
 <body>
         <form id="form1" runat="server">
     <div>
-        <h2>Books List</h2>
+        <h2>Program List</h2>
     <asp:GridView ID="GV_Exchange_List" runat="server" AutoGenerateColumns="False">
             <Columns>
                 <asp:BoundField DataField="Id" HeaderText="ID" />
@@ -20,7 +20,13 @@
                 <asp:BoundField DataField="Quota" HeaderText="Quota" />
                 <asp:BoundField DataField="No_Of_Registered" HeaderText="No Registered " />
                 <asp:BoundField DataField="Fees" HeaderText="Fees" />
-                <asp:ButtonField Text="Register" />
+                
+                <asp:TemplateField HeaderText="">
+                <ItemTemplate>
+                    <asp:Button ID="regiser" runat="server" onclick="regiser_Click" Text="Register" />
+                </ItemTemplate>
+            </asp:TemplateField>
+                
             </Columns>
         </asp:GridView>
     </div>

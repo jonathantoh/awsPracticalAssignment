@@ -22,67 +22,76 @@ namespace NYP {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
-        /// FnameTxt control.
+        /// nameTxt control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox FnameTxt;
+        protected global::System.Web.UI.WebControls.TextBox nameTxt;
         
         /// <summary>
-        /// LnameTxt control.
+        /// adminTxt control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox LnameTxt;
+        protected global::System.Web.UI.WebControls.TextBox adminTxt;
         
         /// <summary>
-        /// Email control.
+        /// coursetxt control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Email;
+        protected global::System.Web.UI.WebControls.TextBox coursetxt;
         
         /// <summary>
-        /// MobileNumber control.
+        /// contactTxt control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox MobileNumber;
+        protected global::System.Web.UI.WebControls.TextBox contactTxt;
         
         /// <summary>
-        /// Password control.
+        /// pemTxt control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Password;
+        protected global::System.Web.UI.WebControls.TextBox pemTxt;
         
         /// <summary>
-        /// ConfirmPassword control.
+        /// emergencyPerson control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox ConfirmPassword;
+        protected global::System.Web.UI.WebControls.TextBox emergencyPerson;
         
         /// <summary>
-        /// comparePasswords control.
+        /// emergencyContact control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CompareValidator comparePasswords;
+        protected global::System.Web.UI.WebControls.TextBox emergencyContact;
+        
+        /// <summary>
+        /// ddlProgram control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList ddlProgram;
         
         /// <summary>
         /// Register control.

@@ -55,6 +55,61 @@ namespace FLYTA.DAL
             return booksData;
         }
 
+        public DataSet GetAllAvailableOSEP()
+        {
+            StringBuilder sql;
+            SqlDataAdapter da;
+            DataSet osepData;
+            SqlConnection conn = dbCon.GetConnection();
+            osepData = new DataSet();
+            sql = new StringBuilder();
+            sql.AppendLine("Select *");
+            sql.AppendLine("From OSEP");
+            sql.AppendLine("Where Quota > No_Of_Registered");
+            try
+            {
+                da = new SqlDataAdapter(sql.ToString(), conn);
+                da.Fill(osepData);
+            }
+            catch (Exception ex)
+            {
+
+            }
+            finally
+            {
+                conn.Close();
+            }
+            return osepData;
+        }
+
+        public int IncreaseRegisteredSeats(int Id)
+        {
+            StringBuilder sql;
+            SqlCommand SQLcmd;
+            int result = 0;
+            SqlConnection conn = dbCon.GetConnection();
+            sql = new StringBuilder();
+            sql.AppendLine("Update OSEP");
+            sql.AppendLine("Set No_OF_Registered = No_OF_Registered + 1");
+            sql.AppendLine("Where Id=@Id");
+            conn.Open();
+            try
+            {
+                SQLcmd = new SqlCommand(sql.ToString(), conn);
+                SQLcmd.Parameters.AddWithValue("@Id", Id);
+                result = SQLcmd.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+
+            }
+            finally
+            {
+                conn.Close();
+            }
+            return result;
+        }
+
 
 
         public int insertExchangeProgram(string Title, string Description, string Duration, string Accommodation_Type, int Quota, int No_Of_Registered, int Fees)
